@@ -346,7 +346,7 @@
           a.classList.add('locked');
           a.addEventListener('click', (e)=>{
             e.preventDefault();
-            window.location.href = 'login.html?next=' + encodeURIComponent(href);
+            window.location.href = 'dashboard.html';
           });
         } else {
           a.classList.remove('locked');
@@ -368,7 +368,7 @@
       ctrl.onclick = async ()=>{ try{ await fetch('/api/logout', {method:'POST', credentials:'include'});}catch(_){} window.location.href = 'index.html'; };
     } else {
       ctrl.textContent = 'Start';
-      ctrl.onclick = ()=>{ window.location.href = 'login.html'; };
+      ctrl.onclick = ()=>{ window.location.href = 'dashboard.html'; };
     }
   }
 

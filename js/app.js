@@ -134,7 +134,7 @@
       btn.onclick = logout;
     } else {
       btn.textContent = 'Get Started';
-      btn.onclick = () => window.location.href = 'login.html';
+      btn.onclick = () => window.location.href = 'dashboard.html';
     }
     
     // Show/hide home sections
