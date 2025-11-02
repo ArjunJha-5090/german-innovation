@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>German Engineering & Innovation | Precision, Quality, Excellence</title>
+  <meta name="description" content="Explore Germany's engineering excellence from Gutenberg to Industry 4.0. Discover innovations in automotive, technology, and science that shaped the modern world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/professional.css">
+</head>
+<body data-page="home">
+  
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index-new.html">
+        <img class="brand-mark" src="images/logo.svg" alt="German Innovation Logo" />
+        <span>German Innovation</span>
+      </a>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn">🌙 Dark</button>
+        <a href="login.html" class="btn primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1>German Engineering & Innovation</h1>
+        <p>Discover 500+ years of precision, quality, and groundbreaking inventions that shaped the modern world—from Gutenberg's printing press to Industry 4.0</p>
+        <div class="hero-actions">
+          <a href="login.html" class="btn primary">Start Exploring</a>
+          <a href="#features" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="text-center mb-4">What You'll Discover</h2>
+      <div class="card-grid">
+        <div class="card fade-in">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔬</div>
+          <h3>Revolutionary Technologies</h3>
+          <p>From the printing press (1440) to X-rays, diesel engines, and modern Industry 4.0—explore innovations that changed everything.</p>
+        </div>
+        <div class="card fade-in">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚗</div>
+          <h3>Automotive Excellence</h3>
+          <p>130+ years of automotive evolution from Carl Benz's first car (1886) to today's cutting-edge electric vehicles.</p>
+        </div>
+        <div class="card fade-in">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏭</div>
+          <h3>World-Class Brands</h3>
+          <p>Mercedes-Benz, BMW, Siemens, Bosch, SAP—companies built on German precision and engineering excellence.</p>
+        </div>
+        <div class="card fade-in">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">👨‍🔬</div>
+          <h3>Brilliant Minds</h3>
+          <p>Meet Einstein, Röntgen, Diesel, Planck, and other scientists who revolutionized physics, medicine, and engineering.</p>
+        </div>
+        <div class="card fade-in">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">📜</div>
+          <h3>Rich History</h3>
+          <p>Journey from the Holy Roman Empire through unification, industrial revolution, to modern Germany's leadership in green tech.</p>
+        </div>
+        <div class="card fade-in">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚡</div>
+          <h3>Future Vision</h3>
+          <p>Explore Germany's commitment to sustainability, AI, quantum computing, and carbon-neutral innovation by 2045.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <h2 class="text-center mb-4">By the Numbers</h2>
+      <div class="card-grid">
+        <div class="card text-center">
+          <h2 style="color: var(--primary); font-size: 3rem; margin-bottom: 0.5rem;">130+</h2>
+          <p style="margin: 0;">Years of Automotive Innovation</p>
+        </div>
+        <div class="card text-center">
+          <h2 style="color: var(--secondary); font-size: 3rem; margin-bottom: 0.5rem;">10+</h2>
+          <p style="margin: 0;">Nobel Prize Winners Featured</p>
+        </div>
+        <div class="card text-center">
+          <h2 style="color: var(--accent); font-size: 3rem; margin-bottom: 0.5rem;">50+</h2>
+          <p style="margin: 0;">World-Changing Inventions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="card" style="text-align: center; padding: 3rem; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; border: none;">
+        <h2 style="color: white; margin-bottom: 1rem;">Ready to Explore?</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem;">Click the lamp to unlock the full experience and dive deep into German innovation</p>
+        <a href="login.html" class="btn" style="background: white; color: var(--primary); border: none; padding: 0.875rem 2rem; font-size: 1rem;">Start Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> German Engineering & Innovation. A comprehensive exploration of precision, quality, and excellence.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Theme toggle
+    const themeBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    themeBtn.textContent = currentTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    
+    themeBtn.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      themeBtn.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    });
+  </script>
+</body>
+</html>

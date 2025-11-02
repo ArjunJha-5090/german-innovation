@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – German Innovation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/professional.css">
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="images/logo.svg" alt="Logo" />
+      <span>German Innovation</span>
+    </a>
+    <div class="header-actions"></div>
+  </div>
+</header>
+<main class="section">
+  <div class="container">
+    <h1>Contact</h1>
+    <form class="form form-narrow" onsubmit="event.preventDefault(); alert('Thanks! This is a demo.');">
+      <label>Name
+        <input type="text" required />
+      </label>
+      <label>Email
+        <input type="email" required />
+      </label>
+      <label>Message
+        <textarea rows="5" required></textarea>
+      </label>
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+  </div>
+</main>
+<footer class="site-footer"><div class="container"><p>© <span id="year"></span> German Engineering & Innovation</p></div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>German Technologies – Sectors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/professional.css">
+  <link rel="stylesheet" href="css/technologies.css">
+</head>
+<body data-page="technologies">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="images/logo.svg" alt="Logo" />
+      <span>German Innovation</span>
+    </a>
+    <div class="header-actions"></div>
+  </div>
+ </header>
+<main>
+  <!-- Hero Section -->
+  <section class="hero" style="padding: 3rem 0; background: linear-gradient(135deg, #1e293b 0%, #334155 100%);">
+    <div class="container" style="text-align: center;">
+      <h1 style="color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.3);" data-tech="title">German Technologies</h1>
+      <p style="font-size: 1.125rem; max-width: 700px; margin: 0 auto; color: #e2e8f0;" data-tech="subtitle">From revolutionary inventions to cutting-edge innovations shaping tomorrow</p>
+    </div>
+  </section>
+
+  <!-- Key Technologies -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;" data-tech="key_title">Key German Technologies</h2>
+        <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Revolutionary inventions that shaped the modern world</p>
+      </div>
+      <div class="card-grid">
+        <div class="card tech-card-clickable" data-tech-id="printing" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #f59e0b; cursor: pointer; position: relative;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📖</div>
+          <h3 style="color: #92400e; margin-bottom: 0.5rem;" data-tech="printing">Printing Press</h3>
+          <div style="font-size: 0.875rem; color: #92400e; font-weight: 600; margin-bottom: 1rem;">Johannes Gutenberg • 1440</div>
+          <p data-tech="printing_desc">Johannes Gutenberg's movable-type printing press (1440) revolutionized knowledge dissemination, making books accessible and sparking the Renaissance and Reformation.</p>
+          <div class="tech-card-extra" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #f59e0b;">
+            <h4 style="color: #92400e; margin-bottom: 0.5rem; font-size: 1rem;">Key Innovations:</h4>
+            <ul style="margin: 0.5rem 0; padding-left: 1.5rem; color: #78350f;">
+              <li>Movable metal type</li>
+              <li>Oil-based ink</li>
+              <li>Screw press mechanism</li>
+            </ul>
+            <h4 style="color: #92400e; margin-bottom: 0.5rem; margin-top: 1rem; font-size: 1rem;">Impact:</h4>
+            <p style="font-size: 0.875rem; color: #78350f;">Enabled mass production of books, spreading literacy from 10% to 60% in 200 years. The Gutenberg Bible (1455) was the first major book printed.</p>
+          </div>
+          <button onclick="event.stopPropagation(); this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.includes('More') ? '▲ View Less' : '▼ View More'" style="margin-top: 1rem; background: #f59e0b; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600; font-size: 0.875rem; width: 100%;">▼ View More</button>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #92400e; font-weight: 600;">📍 Mainz, Germany • Click card for full details</div>
+        </div>
+        <div class="card tech-card-clickable" data-tech-id="xray" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 4px solid #3b82f6; cursor: pointer;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
+          <h3 style="color: #1e40af; margin-bottom: 0.5rem;" data-tech="xray">X-Ray Technology</h3>
+          <div style="font-size: 0.875rem; color: #1e40af; font-weight: 600; margin-bottom: 1rem;">Wilhelm Röntgen • 1895</div>
+          <p data-tech="xray_desc">Wilhelm Röntgen's discovery of X-rays (1895) transformed medical diagnostics, earning him the first Nobel Prize in Physics and saving countless lives.</p>
+          <div class="tech-card-extra" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #3b82f6;">
+            <h4 style="color: #1e40af; margin-bottom: 0.5rem; font-size: 1rem;">Discovery:</h4>
+            <p style="font-size: 0.875rem; color: #1e3a8a;">Röntgen discovered X-rays accidentally while experimenting with cathode rays. He won the first Nobel Prize in Physics (1901).</p>
+            <h4 style="color: #1e40af; margin-bottom: 0.5rem; margin-top: 1rem; font-size: 1rem;">Impact:</h4>
+            <p style="font-size: 0.875rem; color: #1e3a8a;">Revolutionized medicine, allowing doctors to see inside the body without surgery. Used in diagnostics, security, and materials science.</p>
+          </div>
+          <button onclick="event.stopPropagation(); this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.includes('More') ? '▲ View Less' : '▼ View More'" style="margin-top: 1rem; background: #3b82f6; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600; font-size: 0.875rem; width: 100%;">▼ View More</button>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #1e40af; font-weight: 600;">📍 Würzburg, Germany</div>
+        </div>
+        <div class="card tech-card-clickable" data-tech-id="auto" style="background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); border-left: 4px solid #ec4899; cursor: pointer;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
+          <h3 style="color: #9f1239; margin-bottom: 0.5rem;" data-tech="auto">Automobile</h3>
+          <div style="font-size: 0.875rem; color: #9f1239; font-weight: 600; margin-bottom: 1rem;">Carl Benz • 1886</div>
+          <p data-tech="auto_desc">Carl Benz's Patent-Motorwagen (1886) was the world's first production automobile, launching an industry that would transform global transportation.</p>
+          <div class="tech-card-extra" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #ec4899;">
+            <h4 style="color: #9f1239; margin-bottom: 0.5rem; font-size: 1rem;">The First Car:</h4>
+            <p style="font-size: 0.875rem; color: #831843;">Three-wheeled vehicle with 0.75 HP engine. Patent DRP 37435 granted January 29, 1886. Bertha Benz's 1888 road trip proved its viability.</p>
+            <h4 style="color: #9f1239; margin-bottom: 0.5rem; margin-top: 1rem; font-size: 1rem;">Impact:</h4>
+            <p style="font-size: 0.875rem; color: #831843;">Founded the automotive industry. Mercedes-Benz, BMW, Audi, Porsche, and VW continue this legacy with 137+ years of innovation.</p>
+          </div>
+          <button onclick="event.stopPropagation(); this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.includes('More') ? '▲ View Less' : '▼ View More'" style="margin-top: 1rem; background: #ec4899; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600; font-size: 0.875rem; width: 100%;">▼ View More</button>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #9f1239; font-weight: 600;">📍 Mannheim, Germany</div>
+        </div>
+        <div class="card tech-card-clickable" data-tech-id="diesel" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%); border-left: 4px solid #6366f1; cursor: pointer;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">⚙️</div>
+          <h3 style="color: #3730a3; margin-bottom: 0.5rem;" data-tech="diesel">Diesel Engine</h3>
+          <div style="font-size: 0.875rem; color: #3730a3; font-weight: 600; margin-bottom: 1rem;">Rudolf Diesel • 1892</div>
+          <p data-tech="diesel_desc">Rudolf Diesel's compression-ignition engine (1892) became fundamental to shipping, trucking, and heavy industry worldwide due to its efficiency.</p>
+          <div class="tech-card-extra" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #6366f1;">
+            <h4 style="color: #3730a3; margin-bottom: 0.5rem; font-size: 1rem;">Innovation:</h4>
+            <p style="font-size: 0.875rem; color: #312e81;">Compression-ignition engine with 75% efficiency vs 10% for steam. First successful test in 1893. Patent granted 1898.</p>
+            <h4 style="color: #3730a3; margin-bottom: 0.5rem; margin-top: 1rem; font-size: 1rem;">Impact:</h4>
+            <p style="font-size: 0.875rem; color: #312e81;">Powers ships, trucks, trains, and generators worldwide. More efficient than gasoline engines for heavy-duty applications.</p>
+          </div>
+          <button onclick="event.stopPropagation(); this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.includes('More') ? '▲ View Less' : '▼ View More'" style="margin-top: 1rem; background: #6366f1; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600; font-size: 0.875rem; width: 100%;">▼ View More</button>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #3730a3; font-weight: 600;">📍 Augsburg, Germany</div>
+        </div>
+        <div class="card tech-card-clickable" data-tech-id="industry4" style="background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); border-left: 4px solid #10b981; cursor: pointer;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+          <h3 style="color: #065f46; margin-bottom: 0.5rem;" data-tech="industry4">Industry 4.0</h3>
+          <div style="font-size: 0.875rem; color: #065f46; font-weight: 600; margin-bottom: 1rem;">German Initiative • 2011</div>
+          <p data-tech="industry4_desc">Germany pioneered the fourth industrial revolution, integrating AI, IoT, and robotics into smart factories for unprecedented efficiency and flexibility.</p>
+          <div class="tech-card-extra" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #10b981;">
+            <h4 style="color: #065f46; margin-bottom: 0.5rem; font-size: 1rem;">Key Technologies:</h4>
+            <p style="font-size: 0.875rem; color: #064e3b;">Cyber-physical systems, IoT sensors, AI/ML, digital twins, cloud computing, and autonomous robots working together.</p>
+            <h4 style="color: #065f46; margin-bottom: 0.5rem; margin-top: 1rem; font-size: 1rem;">Impact:</h4>
+            <p style="font-size: 0.875rem; color: #064e3b;">Smart factories with 30% higher productivity, mass customization, predictive maintenance, and flexible manufacturing.</p>
+          </div>
+          <button onclick="event.stopPropagation(); this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.includes('More') ? '▲ View Less' : '▼ View More'" style="margin-top: 1rem; background: #10b981; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600; font-size: 0.875rem; width: 100%;">▼ View More</button>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #065f46; font-weight: 600;">📍 Nationwide</div>
+        </div>
+        <div class="card tech-card-clickable" data-tech-id="renewable" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-left: 4px solid #059669; cursor: pointer;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🌱</div>
+          <h3 style="color: #064e3b; margin-bottom: 0.5rem;" data-tech="renewable">Renewable Energy</h3>
+          <div style="font-size: 0.875rem; color: #064e3b; font-weight: 600; margin-bottom: 1rem;">Energiewende • 2000-Present</div>
+          <p data-tech="renewable_desc">Leading the Energiewende (energy transition), Germany develops advanced wind turbines, solar technology, and smart grids for a sustainable future.</p>
+          <div class="tech-card-extra" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #059669;">
+            <h4 style="color: #064e3b; margin-bottom: 0.5rem; font-size: 1rem;">Achievements:</h4>
+            <p style="font-size: 0.875rem; color: #022c22;">50%+ electricity from renewables. World leader in offshore wind. Advanced solar panels and energy storage systems.</p>
+            <h4 style="color: #064e3b; margin-bottom: 0.5rem; margin-top: 1rem; font-size: 1rem;">Goal:</h4>
+            <p style="font-size: 0.875rem; color: #022c22;">80% renewable electricity by 2030, climate neutral by 2045. Pioneering green hydrogen economy.</p>
+          </div>
+          <button onclick="event.stopPropagation(); this.previousElementSibling.style.display = this.previousElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.includes('More') ? '▲ View Less' : '▼ View More'" style="margin-top: 1rem; background: #059669; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600; font-size: 0.875rem; width: 100%;">▼ View More</button>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #064e3b; font-weight: 600;">📍 Nationwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Historical Timeline -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #dc2626 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;" data-tech="history_title">Innovation Through History</h2>
+        <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 600px; margin: 0 auto;">580 years of groundbreaking discoveries and inventions</p>
+      </div>
+      <div class="history-content">
+        <div class="history-era">
+          <div class="era-badge">1440-1600</div>
+          <h3 data-tech="era1_title">The Knowledge Revolution</h3>
+          <p data-tech="era1_desc">Gutenberg's printing press democratized knowledge. Books became affordable, literacy spread, and ideas flowed freely across Europe. This innovation laid the groundwork for the Scientific Revolution and Enlightenment.</p>
+        </div>
+        <div class="history-era">
+          <div class="era-badge">1800-1900</div>
+          <h3 data-tech="era2_title">Industrial Powerhouse</h3>
+          <p data-tech="era2_desc">Germany unified and industrialized rapidly. Carl Benz created the automobile, Rudolf Diesel perfected his engine, and Wilhelm Röntgen discovered X-rays. German chemistry, optics, and electrical engineering led the world.</p>
+        </div>
+        <div class="history-era">
+          <div class="era-badge">1900-1945</div>
+          <h3 data-tech="era3_title">Scientific Golden Age</h3>
+          <p data-tech="era3_desc">Albert Einstein revolutionized physics with relativity. Max Planck founded quantum mechanics. Werner Heisenberg, Max Born, and others made Germany the center of theoretical physics. Konrad Zuse built the first programmable computer (Z3, 1941).</p>
+        </div>
+        <div class="history-era">
+          <div class="era-badge">1950-2000</div>
+          <h3 data-tech="era4_title">Wirtschaftswunder & Precision</h3>
+          <p data-tech="era4_desc">Post-war reconstruction led to the "economic miracle." German engineering became synonymous with quality: Mercedes, BMW, Porsche, Bosch, Siemens. The MP3 format was developed at Fraunhofer Institute (1987).</p>
+        </div>
+        <div class="history-era">
+          <div class="era-badge">2000-Present</div>
+          <h3 data-tech="era5_title">Digital & Green Transition</h3>
+          <p data-tech="era5_desc">Germany leads Industry 4.0, combining automation with AI. The Energiewende pushes renewable energy to 50%+ of electricity. SAP dominates enterprise software. German engineering focuses on sustainability and smart systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Vision -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;" data-tech="future_title">The Future of German Innovation</h2>
+        <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Vision 2030: Leading the next industrial revolution</p>
+      </div>
+      <div class="grid two">
+        <div class="card future-card-clickable" data-future-id="hydrogen" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 4px solid #3b82f6; cursor: pointer;">
+          <h3 style="color: #1e40af;" data-tech="future1_title">🔋 Hydrogen Economy</h3>
+          <p data-tech="future1_desc">Germany invests billions in green hydrogen production and infrastructure. By 2030, hydrogen will power heavy industry, shipping, and aviation, replacing fossil fuels with clean energy from wind and solar.</p>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #1e40af; font-weight: 600;">Click for detailed vision →</div>
+        </div>
+        <div class="card future-card-clickable" data-future-id="quantum" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid #10b981; cursor: pointer;">
+          <h3 style="color: #065f46;" data-tech="future2_title">🧠 Quantum Computing</h3>
+          <p data-tech="future2_desc">German research institutes and companies develop quantum computers for drug discovery, materials science, and cryptography. IBM's quantum system in Ehningen and Fraunhofer's quantum research lead Europe.</p>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #065f46; font-weight: 600;">Click for detailed vision →</div>
+        </div>
+        <div class="card future-card-clickable" data-future-id="ai" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #f59e0b; cursor: pointer;">
+          <h3 style="color: #92400e;" data-tech="future3_title">🤖 AI & Autonomous Systems</h3>
+          <p data-tech="future3_desc">German AI focuses on trustworthy, explainable systems. Autonomous vehicles from Mercedes and BMW, industrial AI from Siemens, and medical AI from university hospitals push boundaries responsibly.</p>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #92400e; font-weight: 600;">Click for detailed vision →</div>
+        </div>
+        <div class="card future-card-clickable" data-future-id="circular" style="background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); border-left: 4px solid #ec4899; cursor: pointer;">
+          <h3 style="color: #9f1239;" data-tech="future4_title">🌍 Circular Economy</h3>
+          <p data-tech="future4_desc">Germany pioneers closed-loop manufacturing where waste becomes resource. Advanced recycling, biodegradable materials, and product-as-a-service models reduce environmental impact while maintaining economic growth.</p>
+          <div style="margin-top: 1rem; font-size: 0.875rem; color: #9f1239; font-weight: 600;">Click for detailed vision →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Culture -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #f59e0b 0%, #ec4899 50%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;" data-tech="culture_title">The German Innovation Culture</h2>
+        <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 600px; margin: 0 auto;">The foundation of engineering excellence and continuous innovation</p>
+      </div>
+      <div class="card culture-card-clickable" style="max-width: 900px; margin: 0 auto; padding: 3rem; text-align: center; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🏛️</div>
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Core Values & Ecosystem</h3>
+        <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 2rem;" data-tech="culture_desc">German innovation is built on three pillars: <strong>Gründlichkeit</strong> (thoroughness), <strong>Präzision</strong> (precision), and <strong>Nachhaltigkeit</strong> (sustainability). The Fraunhofer Society's 76 institutes, Max Planck's 86 research centers, and strong university-industry collaboration create an ecosystem where ideas become reality. The Mittelstand—family-owned SMEs—drives innovation in specialized niches, often becoming hidden world champions.</p>
+        <div class="grid three" style="gap: 2rem; margin-bottom: 1.5rem;">
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">€100B+</div>
+            <div style="color: var(--text-muted);" data-tech="stat1">Annual R&D Investment</div>
+          </div>
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">400+</div>
+            <div style="color: var(--text-muted);" data-tech="stat2">Research Institutes</div>
+          </div>
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">3.1%</div>
+            <div style="color: var(--text-muted);" data-tech="stat3">GDP in R&D</div>
+          </div>
+        </div>
+        <div style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--primary); font-weight: 600;">Click to explore the innovation ecosystem →</div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container"><p>© <span id="year"></span> German Engineering & Innovation</p></div></footer>
+<script src="js/tech-expand.js"></script>
+<script src="js/app.js"></script>
+<script src="js/enhancements.js"></script>
+<script src="js/tech-translations.js"></script>
+<script src="js/tech-modals.js"></script>
+</body>
+</html>

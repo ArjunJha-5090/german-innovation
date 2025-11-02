@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | German Innovation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/professional.css">
+</head>
+<body data-page="dashboard">
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="dashboard-new.html">
+        <img class="brand-mark" src="images/logo.svg" alt="Logo" />
+        <span>German Innovation</span>
+      </a>
+      <div class="header-actions">
+        <button id="langToggle" class="btn">🇩🇪 DE</button>
+        <button id="themeToggle" class="btn">🌙 Dark</button>
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Hero -->
+  <section class="hero" style="padding: 4rem 0 3rem;">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1>Explore German Innovation</h1>
+        <p style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 0;">Click any card to flip and discover more, then dive into the full experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flip Cards Section -->
+  <section class="section" style="padding-top: 2rem; background: var(--bg-alt);">
+    <div class="container">
+      <div class="flip-grid">
+        <!-- Technologies Card -->
+        <div class="flip-card" data-topic="technologies">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-icon">🔬</div>
+              <h3>Technologies</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Revolutionary Technologies</h3>
+              <p>From Gutenberg's printing press to Industry 4.0—explore innovations that transformed the world.</p>
+              <a href="technologies.html" class="btn">Explore Technologies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automotive Card -->
+        <div class="flip-card" data-topic="automotive">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-icon">🚗</div>
+              <h3>Automotive Evolution</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Automotive Excellence</h3>
+              <p>130+ years from Benz's first car to modern EVs. Precision, safety, and performance defined.</p>
+              <a href="automotive.html" class="btn">View Timeline</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brands Card -->
+        <div class="flip-card" data-topic="brands">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-icon">🏭</div>
+              <h3>Leading Brands</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>World-Class Brands</h3>
+              <p>Mercedes, BMW, Siemens, Bosch, SAP—companies built on German engineering excellence.</p>
+              <a href="brands.html" class="btn">Discover Brands</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- People Card -->
+        <div class="flip-card" data-topic="people">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-icon">👨‍🔬</div>
+              <h3>Scientists & Engineers</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Brilliant Minds</h3>
+              <p>Einstein, Röntgen, Diesel, Planck—meet the scientists who changed everything.</p>
+              <a href="people.html" class="btn">Meet Pioneers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- History Card -->
+        <div class="flip-card" data-topic="history">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-icon">📜</div>
+              <h3>Germany History</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Rich History</h3>
+              <p>From Holy Roman Empire to Industry 4.0—a journey through time and innovation.</p>
+              <a href="history.html" class="btn">See Timeline</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Card -->
+        <div class="flip-card" data-topic="gallery">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-icon">🖼️</div>
+              <h3>Gallery</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Visual Collection</h3>
+              <p>Logos, historic images, and technological achievements in one place.</p>
+              <a href="gallery.html" class="btn">Browse Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="section" style="background: var(--bg);">
+    <div class="container">
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="card text-center" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-color: #3b82f6;">
+          <h3 style="color: #1e40af; font-size: 2.5rem; margin-bottom: 0.5rem;">6</h3>
+          <p style="margin: 0; font-weight: 600;">Topic Areas</p>
+        </div>
+        <div class="card text-center" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-color: #10b981;">
+          <h3 style="color: #059669; font-size: 2.5rem; margin-bottom: 0.5rem;">130+</h3>
+          <p style="margin: 0; font-weight: 600;">Years of Innovation</p>
+        </div>
+        <div class="card text-center" style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border-color: #f59e0b;">
+          <h3 style="color: #d97706; font-size: 2.5rem; margin-bottom: 0.5rem;">50+</h3>
+          <p style="margin: 0; font-weight: 600;">Inventions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> German Engineering & Innovation</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Theme toggle
+    const themeBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    themeBtn.textContent = currentTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    
+    themeBtn.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      themeBtn.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    });
+
+    // Language toggle
+    const langBtn = document.getElementById('langToggle');
+    const currentLang = localStorage.getItem('lang') || 'en';
+    langBtn.textContent = currentLang === 'de' ? '🇬🇧 EN' : '🇩🇪 DE';
+    
+    langBtn.addEventListener('click', () => {
+      const lang = localStorage.getItem('lang') === 'de' ? 'en' : 'de';
+      localStorage.setItem('lang', lang);
+      langBtn.textContent = lang === 'de' ? '🇬🇧 EN' : '🇩🇪 DE';
+    });
+
+    // Logout
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+      try {
+        await fetch('/api/logout', { method: 'POST', credentials: 'include' });
+      } catch(e) {}
+      window.location.href = 'index-new.html';
+    });
+
+    // Flip cards
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        if(e.target.tagName !== 'A') {
+          card.classList.toggle('flipped');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

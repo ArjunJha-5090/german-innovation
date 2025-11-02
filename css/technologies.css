@@ -1,0 +1,266 @@
+/* Technologies Page Specific Styles */
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Tech Cards - Uniform Styling */
+.tech-card-clickable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+}
+
+.tech-card-clickable:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+  z-index: 10;
+}
+
+/* Expanded Card Extra Content */
+.tech-card-extra {
+  transition: all 0.4s ease;
+}
+
+/* When expanded, card should grow and overlay */
+.tech-card-clickable.expanded {
+  z-index: 100 !important;
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25) !important;
+}
+
+/* History Content - Simple Cards */
+.history-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-era {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-top: 4px solid #f59e0b;
+  transition: all 0.3s ease;
+}
+
+.history-era:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  border-top-color: #ef4444;
+}
+
+.era-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.history-era h3 {
+  color: #1e40af;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.history-era p {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Future Cards */
+.future-card-clickable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.future-card-clickable:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Culture Card */
+.culture-card-clickable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Tech Modal - Same as Timeline Modal */
+.tech-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.tech-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 24px;
+  max-width: 800px;
+  max-height: 90vh;
+  width: 90%;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.tech-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.tech-modal-close:hover {
+  background: #dc2626;
+  transform: rotate(90deg);
+}
+
+.tech-modal-body {
+  padding: 3rem;
+}
+
+.modal-tech-icon {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modal-tech-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e40af;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modal-tech-inventor {
+  text-align: center;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-tech-desc {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.modal-tech-details h4 {
+  color: #1e40af;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.modal-tech-details p {
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.modal-tech-details ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  color: #475569;
+}
+
+.modal-tech-details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tech-modal-content {
+    width: 95%;
+    max-height: 95vh;
+  }
+  
+  .tech-modal-body {
+    padding: 2rem 1.5rem;
+  }
+  
+  .modal-tech-title {
+    font-size: 1.5rem;
+  }
+}

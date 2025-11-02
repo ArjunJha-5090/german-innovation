@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamp Login – German Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/professional.css">
+</head>
+<body class="lamp-page" data-page="login">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/logo.svg" alt="Logo" />
+        <span>German Innovation</span>
+      </a>
+      <div class="header-actions"></div>
+    </div>
+  </header>
+
+  <!-- Dark Room Overlay -->
+  <div id="darkRoom" class="dark-room">
+    <div class="room-content">
+      <h2 style="color: #888; text-align: center; margin-bottom: 2rem;">Click the lamp to light up the room</h2>
+      
+      <!-- Simple Lamp -->
+      <div class="simple-lamp" id="lampSwitch">
+        <div class="lamp-cord"></div>
+        <div class="lamp-bulb">
+          <div class="bulb-glow"></div>
+          💡
+        </div>
+        <div class="lamp-base"></div>
+      </div>
+      
+      <p style="color: #666; text-align: center; margin-top: 2rem; font-size: 0.9rem;">
+        ✨ Click the bulb to enter
+      </p>
+    </div>
+  </div>
+
+  <main class="lamp-hero" style="opacity: 0; pointer-events: none;">
+    <div class="container">
+      <div class="lamp-scene">
+        <h1>Loading Dashboard...</h1>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p> <span id="year"></span> German Engineering & Innovation</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Dark room lamp animation
+    const darkRoom = document.getElementById('darkRoom');
+    const lampSwitch = document.getElementById('lampSwitch');
+    let isLit = false;
+    
+    lampSwitch.addEventListener('click', () => {
+      if(isLit) return;
+      isLit = true;
+      
+      // INSTANT redirect - no delays
+      window.location.href = 'dashboard.html';
+    });
+  </script>
+</body>
+</html>

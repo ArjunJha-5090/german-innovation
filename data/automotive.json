@@ -1,0 +1,15 @@
+[
+  {"year":1886, "title":"Benz Patent-Motorwagen", "text":"Carl Benz patents the first automobile in Mannheim, Germany. The three-wheeled Motorwagen becomes the world's first production automobile."},
+  {"year":1893, "title":"Maybach's Spray-Nozzle Carburetor", "text":"Wilhelm Maybach invents the spray-nozzle carburetor, enabling more efficient fuel combustion."},
+  {"year":1901, "title":"Mercedes 35 HP", "text":"Daimler-Motoren-Gesellschaft introduces the Mercedes 35 HP, setting new standards for power and speed."},
+  {"year":1913, "title":"Bosch Magneto Ignition", "text":"Robert Bosch perfects the magneto ignition system, improving reliability and performance."},
+  {"year":1926, "title":"Daimler-Benz Merger", "text":"Daimler and Benz merge to form Daimler-Benz AG, creating the Mercedes-Benz brand."},
+  {"year":1938, "title":"Volkswagen Beetle", "text":"Ferdinand Porsche designs the Volkswagen Beetle, which becomes one of the best-selling cars of all time."},
+  {"year":1963, "title":"Porsche 911 Launch", "text":"Porsche unveils the 911, an icon of sports car engineering that remains in production today."},
+  {"year":1972, "title":"BMW M Division", "text":"BMW establishes its Motorsport division (BMW M), focusing on high-performance vehicles."},
+  {"year":1980, "title":"ABS Technology", "text":"Bosch introduces the first electronic Anti-lock Braking System (ABS) for production cars."},
+  {"year":1995, "title":"ESP (Electronic Stability Program)", "text":"Bosch and Mercedes-Benz pioneer ESP, dramatically improving vehicle safety."},
+  {"year":2013, "title":"BMW i3 Electric", "text":"BMW launches the i3, a fully electric city car with carbon fiber construction."},
+  {"year":2020, "title":"Volkswagen ID.3 & ID.4", "text":"Volkswagen's MEB platform brings mass-market electric vehicles to Europe."},
+  {"year":2023, "title":"Mercedes EQS", "text":"Mercedes-Benz EQS sets new standards for luxury electric sedans with over 700 km range."}
+]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Test</title>
+  <style>
+    body { padding: 2rem; font-family: Arial; }
+    img { width: 200px; height: 200px; margin: 1rem; border: 2px solid #333; }
+    .test { margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Image Loading Test</h1>
+  
+  <div class="test">
+    <h2>1. Wikipedia Images:</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gutenberg.jpg/220px-Gutenberg.jpg" alt="Gutenberg" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW" />
+  </div>
+  
+  <div class="test">
+    <h2>2. UI Avatars (Fallback):</h2>
+    <img src="https://ui-avatars.com/api/?name=Albert+Einstein&size=200&background=3b82f6&color=fff" alt="Einstein Avatar" />
+    <img src="https://ui-avatars.com/api/?name=Carl+Benz&size=200&background=ef4444&color=fff" alt="Benz Avatar" />
+  </div>
+  
+  <div class="test">
+    <h2>3. Local Logo:</h2>
+    <img src="images/logo.svg" alt="Local Logo" />
+  </div>
+  
+  <script>
+    // Check if images load
+    document.querySelectorAll('img').forEach((img, i) => {
+      img.onload = () => console.log(`Image ${i+1} loaded:`, img.src);
+      img.onerror = () => console.error(`Image ${i+1} FAILED:`, img.src);
+    });
+  </script>
+</body>
+</html>

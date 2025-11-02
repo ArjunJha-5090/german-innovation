@@ -1,0 +1,108 @@
+/* Brands Page Styles */
+
+.grid.four {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.brand-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  border: 2px solid transparent;
+}
+
+.brand-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  border-color: #3b82f6;
+}
+
+.brand-logo {
+  width: 140px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  filter: none !important;
+  transition: transform 0.3s ease;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.brand-card:hover .brand-logo {
+  transform: scale(1.1);
+  filter: none !important;
+}
+
+.brand-card h3 {
+  color: #1e40af;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.brand-card p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Ensure logos load properly - NO filters */
+.brand-logo {
+  background: white;
+  mix-blend-mode: normal;
+  filter: none !important;
+}
+
+/* Remove all filters that might affect logos */
+.brand-card .brand-logo {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .brand-card {
+  background: var(--bg-alt);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .brand-logo {
+  background: white;
+  filter: none !important;
+  mix-blend-mode: normal;
+}
+
+[data-theme="dark"] .brand-card:hover .brand-logo {
+  filter: none !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .grid.four {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .brand-card {
+    padding: 1.5rem;
+  }
+  
+  .brand-logo {
+    width: 100px;
+    height: 70px;
+  }
+}

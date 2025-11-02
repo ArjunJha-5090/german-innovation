@@ -1,0 +1,14 @@
+[
+  {"name":"Johannes Gutenberg","role":"Inventor of the printing press","lifespan":"c.1400–1468","bio":"Invented movable-type printing press around 1440 in Mainz. His Gutenberg Bible revolutionized knowledge dissemination, education, and the spread of ideas across Europe."},
+  {"name":"Carl Benz","role":"Automobile pioneer","lifespan":"1844–1929","bio":"Patented the Benz Patent-Motorwagen in 1886, the world's first production automobile. Founded Benz & Cie., which later merged to form Mercedes-Benz."},
+  {"name":"Wilhelm Conrad Röntgen","role":"Physicist","lifespan":"1845–1923","bio":"Discovered X-rays in 1895 at the University of Würzburg. Awarded the first Nobel Prize in Physics (1901). His discovery transformed medical diagnostics."},
+  {"name":"Rudolf Diesel","role":"Engineer","lifespan":"1858–1913","bio":"Invented the diesel engine in the 1890s. His compression-ignition engine became fundamental to transportation, shipping, and industry worldwide."},
+  {"name":"Albert Einstein","role":"Theoretical Physicist","lifespan":"1879–1955","bio":"Developed the theory of relativity (E=mc²). Nobel Prize in Physics (1921). His work reshaped our understanding of space, time, and energy."},
+  {"name":"Gottlieb Daimler","role":"Engineer & Industrialist","lifespan":"1834–1900","bio":"Pioneered high-speed internal combustion engines. Co-founded Daimler-Motoren-Gesellschaft. His innovations laid the foundation for modern automobiles."},
+  {"name":"Wilhelm Maybach","role":"Engineer","lifespan":"1846–1929","bio":"Collaborated with Daimler on engine development. Designed the first Mercedes (1901). Later founded Maybach-Motorenbau, known for luxury vehicles."},
+  {"name":"Hugo Junkers","role":"Aviation pioneer","lifespan":"1859–1935","bio":"Built the first all-metal aircraft (Junkers J 1, 1915). Pioneered cantilever wing design. His innovations advanced aviation engineering."},
+  {"name":"Werner von Siemens","role":"Electrical Engineer","lifespan":"1816–1892","bio":"Founded Siemens AG. Invented the electric generator and developed the first electric elevator. Key figure in electrification of industry."},
+  {"name":"Max Planck","role":"Physicist","lifespan":"1858–1947","bio":"Father of quantum theory. Introduced Planck's constant. Nobel Prize in Physics (1918). His work laid the foundation for modern quantum mechanics."},
+  {"name":"Konrad Zuse","role":"Computer Pioneer","lifespan":"1910–1995","bio":"Built the Z3 (1941), the world's first programmable computer. Developed the first high-level programming language (Plankalkül)."},
+  {"name":"Ferdinand Porsche","role":"Automotive Engineer","lifespan":"1875–1951","bio":"Designed the Volkswagen Beetle and founded Porsche. His engineering philosophy emphasized performance, efficiency, and innovation."}
+]
